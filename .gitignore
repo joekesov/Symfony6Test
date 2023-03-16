@@ -1,10 +1,47 @@
-
 ###> symfony/framework-bundle ###
-/.env.local
-/.env.local.php
-/.env.*.local
 /config/secrets/prod/prod.decrypt.private.php
-/public/bundles/
-/var/
-/vendor/
+
+
 ###< symfony/framework-bundle ###
+
+### Symfony ###
+# Cache and logs (Symfony3)
+/var/cache/*
+/var/logs/*
+!var/cache/.gitkeep
+!var/logs/.gitkeep
+
+# Cache and logs (Symfony4+)
+/var/*
+!var/.gitkeep
+/vendor/
+/.env.local
+/.env.*.local
+/public/bundles/
+/public/uploads/
+/public/assets/
+/config/jwt/private.pem
+/config/jwt/public.pem
+
+### Docker ###
+.docker/php/php.ini
+.docker/nginx/default.conf
+
+### IDEs and editors ###
+# PhpStorm
+.idea/
+# Visual Studio Code
+.vscode/
+# NetBeans
+nbproject/
+
+### Operating Systems ###
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
+# Linux
+*~
+
+### Others ###
+.env
