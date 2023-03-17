@@ -37,6 +37,14 @@ services:
     networks:
       - app-network
 
+  node:
+    image: node:16
+    container_name: project_node
+    volumes:
+      - .:/var/www/html
+    working_dir: /var/www/html
+    command: tail -f /dev/null
+
 volumes:
   pgdata:
 
