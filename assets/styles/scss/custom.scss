@@ -1,0 +1,65 @@
+/* Yellow, Green and White color theme */
+
+/* Background colors */
+body {
+  background-color: white;
+}
+
+header {
+  background-color: yellow;
+}
+
+.header-image {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 200px; // Adjust this value to your desired size
+}
+
+.navbar {
+  background-color: green;
+}
+
+.navbar.bg-custom {
+  background-color: green !important;
+}
+
+nav.navbar {
+  background-color: green;
+}
+
+/* Text colors */
+nav.navbar .navbar-brand,
+nav.navbar .nav-link {
+  color: white;
+}
+
+/* Active and hover states for navigation */
+nav.navbar .nav-link:hover,
+nav.navbar .nav-link:focus {
+  color: yellow;
+}
+
+nav.navbar .nav-item.active .nav-link {
+  color: yellow;
+}
+
+/* Login link */
+.login-link {
+  color: green;
+}
+
+.login-link:hover {
+  color: yellow;
+}
+
+.top-container {
+  background-color: red;
+}
+
+.top-container .login-link {
+  color: yellow;
+  &:hover {
+    color: green;
+  }
+}

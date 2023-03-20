@@ -26,3 +26,8 @@ docker-compose logs nginx
 
 docker exec -it project_php bash
 
+
+
+
+docker-compose exec node npm install --save-dev sass-loader@^12.0.0 sass@^1.32.0
+docker-compose exec node npm run dev
